@@ -12,15 +12,13 @@ struct UsersView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("Raw JSON Data:")
-            }
-            ScrollView {
-                Text(userData.users)
+            Text("Random Users").font(.largeTitle)
+            List(userData.users) { user in
+                Text(user.fullName)
             }
         }
         .padding()
-        .navigationTitle("Random Users")
+        //.navigationTitle("Random Users")
     }
 }
 

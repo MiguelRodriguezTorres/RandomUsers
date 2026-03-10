@@ -10,7 +10,7 @@ import Combine
 
 @MainActor
 class UserData: ObservableObject {
-    @Published var users: String = ""
+    @Published var users: [User] = []
     
     init() {
         Task {

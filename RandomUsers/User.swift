@@ -18,6 +18,7 @@ struct Response: Decodable {
 struct User: Decodable, Identifiable {
     let id: String
     let name: Name
+    let picture: Picture
     
     var fullName: String {
         name.title + ". " + name.first + " " + name.last
@@ -29,11 +30,14 @@ struct User: Decodable, Identifiable {
         let loginInfo = try values.nestedContainer(keyedBy: LoginInfoCodingKeys.self, forKey: .login)
         
         id = try loginInfo.decode(String.self, forKey: .uuid)
+        
+        picture = try values.decode(Picture.self, forKey: .picture)
     }
     
     enum CodingKeys: String, CodingKey {
         case name
         case login
+        case picture
     }
     
     enum LoginInfoCodingKeys: String, CodingKey {
@@ -45,4 +49,10 @@ struct Name: Decodable {
     let title: String
     let first: String
     let last: String
+}
+
+struct Picture: Decodable {
+    let large: String
+    let medium: String
+    let thumbnail: String
 }

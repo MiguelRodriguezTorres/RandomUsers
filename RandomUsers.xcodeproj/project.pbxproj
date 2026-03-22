@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49F19C322F6D94E20090E000 /* randomUsers.json in Resources */ = {isa = PBXBuildFile; fileRef = 49F19C2C2F6D94E20090E000 /* randomUsers.json */; };
+		49E94F8F2F709EB600B27F3B /* randomUsers.json in Resources */ = {isa = PBXBuildFile; fileRef = 49E94F8E2F709EB600B27F3B /* randomUsers.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +31,7 @@
 		49C4DD8A2F5CB2DB001B6CE5 /* RandomUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C4DD972F5CB2DC001B6CE5 /* RandomUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C4DDA12F5CB2DC001B6CE5 /* RandomUsersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomUsersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		49F19C2C2F6D94E20090E000 /* randomUsers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = randomUsers.json; sourceTree = "<group>"; };
+		49E94F8E2F709EB600B27F3B /* randomUsers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = randomUsers.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -80,7 +80,7 @@
 		49C4DD812F5CB2DB001B6CE5 = {
 			isa = PBXGroup;
 			children = (
-				49F19C2C2F6D94E20090E000 /* randomUsers.json */,
+				49E94F8E2F709EB600B27F3B /* randomUsers.json */,
 				49C4DD8C2F5CB2DB001B6CE5 /* RandomUsers */,
 				49C4DD9A2F5CB2DC001B6CE5 /* RandomUsersTests */,
 				49C4DDA42F5CB2DC001B6CE5 /* RandomUsersUITests */,
@@ -218,7 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49F19C322F6D94E20090E000 /* randomUsers.json in Resources */,
+				49E94F8F2F709EB600B27F3B /* randomUsers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
